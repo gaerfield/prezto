@@ -19,10 +19,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
 fi
 
 # Customize to your needs...
-fpath=(~/.zsh/completion $fpath)
-POWERLEVEL9K_MODE='awesome_patched'
+#fpath=(~/.zsh/completion $fpath)
+POWERLEVEL9K_MODE=''
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
 # Limit to the last two folders
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 # truncate_middle     = truncate middle-part
