@@ -1,0 +1,18 @@
+alias ls='ls --color'
+alias l='ls -tF'     # type, info
+alias la='ls -tFA'   # type, info, all
+alias ll='ls -ltFAh' # long list, type, info, all human readable
+
+alias grep='grep --color'
+
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+
+alias whereami=display_info
+
+
