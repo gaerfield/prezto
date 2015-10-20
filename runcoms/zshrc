@@ -19,8 +19,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
 fi
 
 # Customize to your needs...
-#fpath=(~/.zsh/completion $fpath)
-POWERLEVEL9K_MODE=''
+fpath=(~/.zsh/completion $fpath)
+POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
 # Limit to the last two folders
