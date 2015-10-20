@@ -10,9 +10,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias"
+fi
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zlocal"
+fi
+
 # Customize to your needs...
 fpath=(~/.zsh/completion $fpath)
 POWERLEVEL9K_MODE='awesome_patched'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv vcs)
+# Limit to the last two folders
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+# truncate_middle     = truncate middle-part
+# truncate_from_right = OR from right, leaving the first X characters untouched
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
