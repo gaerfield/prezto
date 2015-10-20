@@ -13,9 +13,7 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 
-alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo aptitude dist-upgrade -y && sudo apt-get autoremove -y'
-alias whereami='pwd'
-alias port='netstat -tulpn | grep --color'
+alias whereami=display_info
 
 # Functions
 # Find in all files pattern $1
