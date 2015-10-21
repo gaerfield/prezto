@@ -1,3 +1,12 @@
 *.zwc
 *.zwc.old
 modules/*/cache.zsh
+
+# vim.ignore - taken from: https://github.com/github/gitignore
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
