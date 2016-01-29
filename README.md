@@ -10,12 +10,13 @@ Installation
 
 Prezto will work with any recent release of Zsh, but the minimum required
 version is 4.3.17.
+  0. uninstall oh-my-zsh
 
-  1. Launch Zsh:
+        uninstall_oh_my_zsh
+        rm .z*
+        rm .minttyrc
 
-        zsh
-
-  2. Clone the repository:
+  1. Clone the repository:
 
         git clone --recursive https://github.com/gaerfield/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
@@ -27,9 +28,12 @@ version is 4.3.17.
           ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done
 
-  4. Set Zsh as your default shell:
+  4. install fonts using windows-explorer right-click -> install
 
-        chsh -s /bin/zsh
+  5. solve insecure directories problem and autocompletion problem
+
+      compaudit | xargs chmod g-w
+      rm -f ~/.zcompdump*; compinit
 
   5. Open a new Zsh terminal window or tab.
 
