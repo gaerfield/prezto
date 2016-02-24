@@ -13,12 +13,10 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 
-alias whereami=display_info
+alias whereami='pwd'
+alias port='netstat -tulpn | grep --color'
 
 # Functions
-# Find in all files pattern $1
-fif() { ff * -exec grep -nHr "$1" {} \; ; }
-
 # Extract most know archives with one command
 extract () {
     if [ -f $1 ] ; then

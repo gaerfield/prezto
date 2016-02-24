@@ -20,7 +20,7 @@ version is 4.3.17.
 
         git clone --recursive https://github.com/gaerfield/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
-  3. Create a new Zsh configuration by copying the Zsh configuration files
+  2. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
 
         setopt EXTENDED_GLOB
