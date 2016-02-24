@@ -6,16 +6,16 @@
 #
 
 # Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zlocal"
+fi
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias"
-fi
-
-if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zlocal"
 fi
 
 # Customize to your needs...
