@@ -6,6 +6,10 @@
 #
 
 # Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zlocal"
+fi
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
@@ -14,16 +18,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zalias"
 fi
 
-if [[ -s "${ZDOTDIR:-$HOME}/.zlocal" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zlocal"
-fi
-
 # Customize to your needs...
 fpath=(~/.zsh/completion $fpath)
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
-# Status nur anzeigen, wenn nicht erfolgreich
+# Hide succesful status
 POWERLEVEL9K_STATUS_VERBOSE=FALSE
 # Limit to the last two folders
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
