@@ -23,6 +23,8 @@ fi
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
+# Hide succesful status
+POWERLEVEL9K_STATUS_VERBOSE=FALSE
 # Limit to the last two folders
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 # truncate_middle     = truncate middle-part
