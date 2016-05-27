@@ -28,8 +28,20 @@ version is 4.3.17.
         done
 
   4. Set Zsh as your default shell:
+  
+    1. default: 
 
+        ```
         chsh -s /bin/zsh
+        ```
+
+    2. if client is part of active-directory, edit `.profile` and add at the bottom:
+
+        ```
+        # change to zsh
+        /bin/zsh
+        exit
+        ```
 
   5. Open a new Zsh terminal window or tab.
 
