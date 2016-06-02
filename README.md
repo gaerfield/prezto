@@ -23,18 +23,18 @@ version is 4.3.17.
   2. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
 
-        ``` bash
-        setopt EXTENDED_GLOB
-        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-        done
-        ```
+      ``` bash
+      setopt EXTENDED_GLOB
+      for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+      done
+      ```
 
   4. install fonts using windows-explorer right-click -> install
 
   5. solve insecure directories problem and autocompletion problem
 
-      ``` bash
+      ```bash
       compaudit | xargs chmod g-w
       rm -f ~/.zcompdump*; compinit
       ```
